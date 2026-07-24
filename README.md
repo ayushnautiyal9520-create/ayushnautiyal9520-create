@@ -47,7 +47,7 @@
 
 <br>
 
-## 📊 GitHub Analytics
+##  GitHub Analytics
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=ayushnautiyal9520-create&show_icons=true&theme=cyberpunk&hide_border=false" width="410" alt="GitHub Stats" />

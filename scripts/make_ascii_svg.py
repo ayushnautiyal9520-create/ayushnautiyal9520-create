@@ -1,21 +1,27 @@
-import sys
+import os
 from pathlib import Path
 from PIL import Image, ImageEnhance, ImageOps
 
-RAMP = " .:-=+*#%@"  # Crisp 10-level density ramp
+RAMP = " .:-=+*#%@"  # Crisp density ramp
 
-def image_to_ascii(img_path, cols=54, aspect_ratio=0.52):
+def image_to_ascii(img_path, cols=52, aspect_ratio=0.52):
     img = Image.open(img_path).convert("L")
+    w, h = img.size
     
-    # Enhance contrast & sharpness for crisp facial features
+    # Tight crop around Ayush's head, face and shoulders (top center region)
+    # Box: (left, upper, right, lower)
+    crop_box = (int(w * 0.18), int(h * 0.05), int(w * 0.82), int(h * 0.75))
+    img = img.crop(crop_box)
+    
+    # Enhance contrast specifically for face details
     enhancer = ImageEnhance.Contrast(img)
-    img = enhancer.enhance(1.8)
+    img = enhancer.enhance(2.2)
     
     sharpener = ImageEnhance.Sharpness(img)
-    img = sharpener.enhance(1.5)
+    img = sharpener.enhance(2.0)
 
-    w, h = img.size
-    rows = int((h / w) * cols * aspect_ratio)
+    w_c, h_c = img.size
+    rows = int((h_c / w_c) * cols * aspect_ratio)
     img_resized = img.resize((cols, rows), Image.Resampling.LANCZOS)
     
     ascii_rows = []
@@ -24,33 +30,36 @@ def image_to_ascii(img_path, cols=54, aspect_ratio=0.52):
         row_chars = []
         for x in range(cols):
             pixel = img_resized.getpixel((x, y))
-            # Invert so dark hair/eyes map to dense characters, bright bg maps to spaces
-            val = 255 - pixel
-            idx = int((val / 255) * (ramp_len - 1))
-            char = RAMP[idx]
+            # Invert: dark features (hair, eyes, shadow) -> dense chars, bright background -> spaces
+            if pixel > 215:  # Suppress bright background noise to empty spaces
+                char = " "
+            else:
+                val = 255 - pixel
+                idx = int((val / 255) * (ramp_len - 1))
+                char = RAMP[idx]
             row_chars.append(char)
         ascii_rows.append("".join(row_chars))
     
     return ascii_rows, cols, rows
 
 def make_ascii_svg():
-    input_img = Path("source-prepped.png")
+    input_img = Path("source-photo.jpg")
     if not input_img.exists():
-        input_img = Path("source-photo.jpg")
+        input_img = Path("source-prepped.png")
 
     if not input_img.exists():
-        print("No source-prepped.png or source-photo.jpg found.")
+        print("No source-photo.jpg found.")
         return
 
-    print(f"Generating Crisp ASCII SVG from {input_img}...")
-    ascii_rows, cols, num_rows = image_to_ascii(input_img, cols=54)
+    print(f"Generating face-focused ASCII SVG from {input_img}...")
+    ascii_rows, cols, num_rows = image_to_ascii(input_img, cols=52)
 
     width = 410
     height = 380
-    font_size = 9.5
-    row_height = 11.5
-    left_margin = 22
-    top_margin = 54
+    font_size = 9.8
+    row_height = 11.8
+    left_margin = 28
+    top_margin = 56
 
     row_elements = []
     for idx, row_text in enumerate(ascii_rows):
@@ -82,11 +91,6 @@ def make_ascii_svg():
         stroke: url(#cyber-border);
         stroke-width: 1.8;
       }}
-      .header-bg {{
-        fill: #111827;
-        rx: 14px;
-        ry: 14px;
-      }}
       .window-btn-red {{ fill: #f43f5e; }}
       .window-btn-yellow {{ fill: #fbbf24; }}
       .window-btn-green {{ fill: #34d399; }}
@@ -102,9 +106,9 @@ def make_ascii_svg():
       .ascii-row {{
         font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
         font-size: {font_size}px;
-        font-weight: 600;
+        font-weight: 700;
         fill: #38bdf8;
-        letter-spacing: 1px;
+        letter-spacing: 1.2px;
         white-space: pre;
         opacity: 0;
         transform: translateY(-2px);
@@ -140,7 +144,7 @@ def make_ascii_svg():
     with open(out_file, "w", encoding="utf-8") as f:
         f.write(svg_content)
 
-    print(f"Successfully generated crisp ayush-ascii.svg ({width}x{height})")
+    print(f"Successfully generated face-focused ayush-ascii.svg ({width}x{height})")
 
 if __name__ == "__main__":
     make_ascii_svg()

@@ -4,7 +4,7 @@
 ### Full-Stack Software Developer & SaaS Architect
 
 [![Portfolio](https://img.shields.io/badge/Website-gryven.vercel.app-38bdf8?style=for-the-badge&logo=vercel&logoColor=white)](https://gryven.vercel.app/)
-[![Email](https://img.shields.io/badge/Email-ayushnautiyal9520--gmail.com-f43f5e?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ayushnautiyal9520@gmail.com)
+[![Email](https://img.shields.io/badge/Email-ayushnautiyal8936--gmail.com-f43f5e?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ayushnautiyal8936@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-ayushnautiyal9520--create-c084fc?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ayushnautiyal9520-create)
 
 <br>
@@ -20,7 +20,7 @@
 <table>
   <tr>
     <td valign="top" align="center">
-      <img src="./ayush-ascii.svg" width="410" alt="Ayush ASCII Portrait" />
+      <img src="./ayush-ascii.svg" width="410" alt="Ayush Portrait Card" />
     </td>
     <td valign="top" align="center">
       <img src="./info-card.svg" width="450" alt="Ayush Terminal Info Card" />

@@ -107,7 +107,7 @@ def make_info_card():
     </g>
 
     <g class="line" style="animation-delay: 660ms;">
-      <text x="24" y="246"><tspan class="key">Email</tspan><tspan class="val">: ayushnautiyal9520@gmail.com</tspan></text>
+      <text x="24" y="246"><tspan class="key">Email</tspan><tspan class="val">: ayushnautiyal8936@gmail.com</tspan></text>
     </g>
 
     <g class="line" style="animation-delay: 740ms;">
@@ -143,7 +143,7 @@ def make_info_card():
     with open(out_file, "w", encoding="utf-8") as f:
         f.write(svg_content)
 
-    print(f"Successfully generated info-card.svg ({width}x{height})")
+    print(f"Successfully generated info-card.svg with updated email ({width}x{height})")
 
 if __name__ == "__main__":
     make_info_card()

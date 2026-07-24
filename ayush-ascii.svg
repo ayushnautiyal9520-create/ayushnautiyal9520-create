@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 360" width="370" height="360">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&amp;display=swap');
+
+      .card-bg {
+        fill: #0d1117;
+        rx: 12px;
+        ry: 12px;
+        stroke: #30363d;
+        stroke-width: 1.5;
+      }
+      .window-btn-red { fill: #ff5f56; }
+      .window-btn-yellow { fill: #ffbd2e; }
+      .window-btn-green { fill: #27c93f; }
+
+      .title-text {
+        font-family: 'Fira Code', monospace;
+        font-size: 11px;
+        fill: #8b949e;
+        font-weight: 500;
+      }
+
+      .ascii-row {
+        font-family: 'Fira Code', 'Courier New', monospace;
+        font-size: 6.8px;
+        fill: #8b949e;
+        white-space: pre;
+        opacity: 0;
+        transform: translateX(-4px);
+        animation: typeRow 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+
+      @keyframes typeRow {
+        to {
+          opacity: 1;
+          transform: translateX(0);
+          fill: #c9d1d9;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect class="card-bg" width="370" height="360" />
+
+  <!-- Window Header -->
+  <circle cx="22" cy="22" r="5.5" class="window-btn-red" />
+  <circle cx="38" cy="22" r="5.5" class="window-btn-yellow" />
+  <circle cx="54" cy="22" r="5.5" class="window-btn-green" />
+  <text x="185" y="26" text-anchor="middle" class="title-text">ayush_portrait.ascii</text>
+  <line x1="1" y1="42" x2="369" y2="42" stroke="#21262d" stroke-width="1" />
+
+  <!-- ASCII Portrait Rows -->
+  <g class="ascii-row" style="animation-delay: 0ms;"><text x="16" y="46.0">+**ccccc***++=====++++++++===---------========+++++++++++===+++++++++++++++==-`.  </text></g><g class="ascii-row" style="animation-delay: 55ms;"><text x="16" y="53.4">...``:=cs#sccccc**++======++++++====---------::`.........  .`:--===++++++++++==---</text></g><g class="ascii-row" style="animation-delay: 110ms;"><text x="16" y="60.8">      `-c*:`::-=++**cccc**++===========-----::``````:::-----=====++++++++++=====--</text></g><g class="ascii-row" style="animation-delay: 165ms;"><text x="16" y="68.2">      `-*+`        ..`:=cc==+++++++=======================---::::`:::::-=++++==-:`</text></g><g class="ascii-row" style="animation-delay: 220ms;"><text x="16" y="75.6">......`=**`.....       `+=     .``-+*===++++++**+++++++++++=:```````:::-=+++++++==</text></g><g class="ascii-row" style="animation-delay: 275ms;"><text x="16" y="83.0">......`=c*:``````...`.`:==`..      `-. .``:=c*=+*cccccccccccc******ccccc**+==+++++</text></g><g class="ascii-row" style="animation-delay: 330ms;"><text x="16" y="90.4">      .-c*`............:==`..  .``--=:`.  .`+-..-+*css**csssc*******cccc**-:```:-=</text></g><g class="ascii-row" style="animation-delay: 385ms;"><text x="16" y="97.8">      `=c*.         . .:+=.  `=*cs#####s*-.`+-..:==+c+---=cs+=======+*++++++++++++</text></g><g class="ascii-row" style="animation-delay: 440ms;"><text x="16" y="105.2">..``. .=s*.            :*+. =##%%%%###%%%@+.+:  :==+c=```:+*-:-----==+====--====+s</text></g><g class="ascii-row" style="animation-delay: 495ms;"><text x="16" y="112.6">=-=-:``=s*:````... .``.:*=..#%%#*++==+*##%#:=`  `==+*-...`=+:```:::-====--:`::::-*</text></g><g class="ascii-row" style="animation-delay: 550ms;"><text x="16" y="120.0">*-==-:-=c*-::::--:::--:-+=:`+%s=-::::-=*cs%==:. `--=*: ...-=`..````:-----:``-=+=-*</text></g><g class="ascii-row" style="animation-delay: 605ms;"><text x="16" y="127.4">*+==::-+c*-::::::::-==--*+=+-=+==-=**cc+=cs+==:`::-=+`   .-=.....```:--::::--===**</text></g><g class="ascii-row" style="animation-delay: 660ms;"><text x="16" y="134.8">c**+::-+c*-:::-------:-=*+++-`c#%*=ccc+-=+cc===----++`   .--.......`::::::-+*+=**+</text></g><g class="ascii-row" style="animation-delay: 715ms;"><text x="16" y="142.2">cc*+-::+c*-`::=+=-:::::-*==+=:=++:.::``:=+*+--==-::=+`  ..-=.......`:::::::+cc++*=</text></g><g class="ascii-row" style="animation-delay: 770ms;"><text x="16" y="149.6">c**+-::+c+-`:-+*+=--=-:-+=---:=:=+cs***++*c=-=*+=+=++`  ..--.  .```:---::`:+cc***=</text></g><g class="ascii-row" style="animation-delay: 825ms;"><text x="16" y="157.0">c*++=--*c+-`-+******cc+=+=++-:-ccsssccc**cs*++===++*+:`::-++--:=sssccssc-``-c%%##*</text></g><g class="ascii-row" style="animation-delay: 880ms;"><text x="16" y="164.4">cc***++*s*:`=*cccccccc+=+==+:..:c***++*s#%#s*:.`======---c%#*----=cssssc-.`=c%@%#*</text></g><g class="ascii-row" style="animation-delay: 935ms;"><text x="16" y="171.8">*++--:-cs+--+**c*+---::-+:``..``:*css#%%%c*=. ..```-=*+=+csc+---:-*ccssc-:-+cc*==-</text></g><g class="ascii-row" style="animation-delay: 990ms;"><text x="16" y="179.2">+++:---*c+=-:::-=:=-::-=+:````::-+=+#%##+=+*+`:: .. .``:-+**+=+*++====+++cssssc` .</text></g><g class="ascii-row" style="animation-delay: 1045ms;"><text x="16" y="186.6">::`.:--cc+:```.:--cscc***++++++*=:`=cs#c=++==-`.``..`:`.`:-*#%%%#++c*+cccsss#%c.  </text></g><g class="ascii-row" style="animation-delay: 1100ms;"><text x="16" y="194.0">-:-=:`-*c*+*+--==*####sscccccs+:.`-:+*+===:::`.`:-``--..... .=s%%sssc*sssss##%c`.`</text></g><g class="ascii-row" style="animation-delay: 1155ms;"><text x="16" y="201.4">...``````````.```+s##%%%#ss#%+..:`` ..`::::-:```-:`:--``..`. .`-sc+=+*+=*ssc++-:`=</text></g><g class="ascii-row" style="animation-delay: 1210ms;"><text x="16" y="208.8">:````````````````=###scsc+=c=  ..`.   ````:`...`:`..`-::-:``::`.`=:::::`-+*csss+:=</text></g><g class="ascii-row" style="animation-delay: 1265ms;"><text x="16" y="216.2">:::``::::::::::::+#%#ssssss*.....`   .-:.``-+=```...-=-++=:``....`+++=+++++****=--</text></g><g class="ascii-row" style="animation-delay: 1320ms;"><text x="16" y="223.6">ss*===:-++=--=--:=css#%%##%s``...`   :=``::::`:```:+*+==--:..     `=-=s%%%%%##sssc</text></g><g class="ascii-row" style="animation-delay: 1375ms;"><text x="16" y="231.0">%%*=+=`:+=:`*##c:```-*%#c*c+:...`` ..```-`---==+**+==c+-:--`   `:`.-==+*++***s####</text></g><g class="ascii-row" style="animation-delay: 1430ms;"><text x="16" y="238.4">#*.    `--:.`---`:--==ss+++=:..`-:..``.::`-::`:-==:`:+c=----:-+**c*++=-=-::-=cssss</text></g><g class="ascii-row" style="animation-delay: 1485ms;"><text x="16" y="245.8">%*+++====--:::````````=s++++`:-`=-`````:``--:``-=:.`:=sc+=--+=:`::---=+*+=css##sss</text></g><g class="ascii-row" style="animation-delay: 1540ms;"><text x="16" y="253.2">c*cccs##sssscc##scsc***%####-```+=---:`:`-==---===:`==*#c+:-=:.`````-++===css#####</text></g><g class="ascii-row" style="animation-delay: 1595ms;"><text x="16" y="260.6">#++++*csssscc*ccc*#%##*s#ccs+.``++-::-=--==--:==-:.`:-+s#c=-:... `:`:+==--css#####</text></g><g class="ascii-row" style="animation-delay: 1650ms;"><text x="16" y="268.0">%=:-=+*ccccccc***+s#s#c#sccc:`::+*-`````::````:::` :`:=cc%*-:`..```` `----css%%###</text></g><g class="ascii-row" style="animation-delay: 1705ms;"><text x="16" y="275.4">@s:::-+*********+=s#ssc*****```:=c-`.``::`.:::::-`.:::=*+c+    .::--:::---*sc**ccc</text></g><g class="ascii-row" style="animation-delay: 1760ms;"><text x="16" y="282.8">+-```:+*+++++++++=s#sss###s#*`.`-c=`.::--::-=--=-``=-==**sc*c***ccs#s+----*c+:::::</text></g><g class="ascii-row" style="animation-delay: 1815ms;"><text x="16" y="290.2">  .```=++++======-s#ss#####%#:.`:*=.:--::``--:::`.:-:--+=*csc**cccsc=-----*s=...``</text></g><g class="ascii-row" style="animation-delay: 1870ms;"><text x="16" y="297.6">......-+=======---s%#####sc**-`:-*+:--+-`..--``...:-:-:=--c*++ccs#c-------*s=...``</text></g><g class="ascii-row" style="animation-delay: 1925ms;"><text x="16" y="305.0">.   ..-=========*+#%ssscc***c=.:-++-:`-=`.:==::..:=---:-=**+**cs#*--------c#+`````</text></g><g class="ascii-row" style="animation-delay: 1980ms;"><text x="16" y="312.4">*+=:``=***ccccccs#%%scc*****c=..`**::`-=::=+=-`.-+===-:+c+=+cs##+---------s#*===--</text></g><g class="ascii-row" style="animation-delay: 2035ms;"><text x="16" y="319.8">ss%%sccss%%#ssccccc****ccc**sc```**--`::``-=-` `+=--=-+*+=+cs#c=---------=csccc**+</text></g><g class="ascii-row" style="animation-delay: 2090ms;"><text x="16" y="327.2">**cc********+++=====++*sssss#s```**=-:. .::-: `**++++*+==+c#s-:--------=*cc****++=</text></g><g class="ascii-row" style="animation-delay: 2145ms;"><text x="16" y="334.6">+===========------==+cc++++*c-.``=+-`.`.`-:-=+ssc**+c%#c+cc=:..:---=-=csc******+++</text></g><g class="ascii-row" style="animation-delay: 2200ms;"><text x="16" y="342.0">=======-===-------==+**+++***:--`c+..:---:+*sssc*++=*#@@%+. .. `====*cc**+****++++</text></g><g class="ascii-row" style="animation-delay: 2255ms;"><text x="16" y="349.4">=========----------====++++++...=c+::-:-`:-:--=====+**s*+`.`..`:-+*ss*********++++</text></g><g class="ascii-row" style="animation-delay: 2310ms;"><text x="16" y="356.8">========-=-----------=+++=+*:.:-*=`-```.:`:`.:++=+***c*-.  ..===*ssc*********+===+</text></g><g class="ascii-row" style="animation-delay: 2365ms;"><text x="16" y="364.2">-====---:::-------:---======:---c#:. ..`` :: -#ccccccccsc*=::*+*++=++++++++++++=++</text></g><g class="ascii-row" style="animation-delay: 2420ms;"><text x="16" y="371.6">::-----:::::--:::-:-------==-:-=c%%*:..``:`..=%%%####ssc*#%s-:-----=====-=====++=+</text></g>
+</svg>

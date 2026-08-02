@@ -1,6 +1,6 @@
 {
   "username": "ayushnautiyal9520-create",
-  "total_contributions": 208,
+  "total_contributions": 210,
   "current_streak": 11,
   "longest_streak": 11,
   "best_day": {
@@ -8,48 +8,6 @@
     "count": 27
   },
   "days": [
-    {
-      "date": "2025-07-27",
-      "count": 0,
-      "level": 0,
-      "tooltip": "No contributions on July 27th."
-    },
-    {
-      "date": "2025-07-28",
-      "count": 0,
-      "level": 0,
-      "tooltip": "No contributions on July 28th."
-    },
-    {
-      "date": "2025-07-29",
-      "count": 0,
-      "level": 0,
-      "tooltip": "No contributions on July 29th."
-    },
-    {
-      "date": "2025-07-30",
-      "count": 0,
-      "level": 0,
-      "tooltip": "No contributions on July 30th."
-    },
-    {
-      "date": "2025-07-31",
-      "count": 0,
-      "level": 0,
-      "tooltip": "No contributions on July 31st."
-    },
-    {
-      "date": "2025-08-01",
-      "count": 0,
-      "level": 0,
-      "tooltip": "No contributions on August 1st."
-    },
-    {
-      "date": "2025-08-02",
-      "count": 0,
-      "level": 0,
-      "tooltip": "No contributions on August 2nd."
-    },
     {
       "date": "2025-08-03",
       "count": 0,
@@ -2230,9 +2188,15 @@
     },
     {
       "date": "2026-08-01",
-      "count": 8,
+      "count": 10,
       "level": 3,
-      "tooltip": "8 contributions on August 1st."
+      "tooltip": "10 contributions on August 1st."
+    },
+    {
+      "date": "2026-08-02",
+      "count": 0,
+      "level": 0,
+      "tooltip": "No contributions on August 2nd."
     }
   ]
 }

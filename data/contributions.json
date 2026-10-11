@@ -1,55 +1,13 @@
 {
   "username": "ayushnautiyal9520-create",
-  "total_contributions": 303,
-  "current_streak": 80,
-  "longest_streak": 80,
+  "total_contributions": 304,
+  "current_streak": 81,
+  "longest_streak": 81,
   "best_day": {
     "date": "2026-07-16",
     "count": 27
   },
   "days": [
-    {
-      "date": "2025-10-05",
-      "count": 0,
-      "level": 0,
-      "tooltip": "No contributions on October 5th."
-    },
-    {
-      "date": "2025-10-06",
-      "count": 0,
-      "level": 0,
-      "tooltip": "No contributions on October 6th."
-    },
-    {
-      "date": "2025-10-07",
-      "count": 0,
-      "level": 0,
-      "tooltip": "No contributions on October 7th."
-    },
-    {
-      "date": "2025-10-08",
-      "count": 0,
-      "level": 0,
-      "tooltip": "No contributions on October 8th."
-    },
-    {
-      "date": "2025-10-09",
-      "count": 1,
-      "level": 1,
-      "tooltip": "1 contribution on October 9th."
-    },
-    {
-      "date": "2025-10-10",
-      "count": 0,
-      "level": 0,
-      "tooltip": "No contributions on October 10th."
-    },
-    {
-      "date": "2025-10-11",
-      "count": 0,
-      "level": 0,
-      "tooltip": "No contributions on October 11th."
-    },
     {
       "date": "2025-10-12",
       "count": 0,
@@ -2230,9 +2188,15 @@
     },
     {
       "date": "2026-10-10",
+      "count": 1,
+      "level": 1,
+      "tooltip": "1 contribution on October 10th."
+    },
+    {
+      "date": "2026-10-11",
       "count": 0,
       "level": 0,
-      "tooltip": "No contributions on October 10th."
+      "tooltip": "No contributions on October 11th."
     }
   ]
 }

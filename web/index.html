@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEONIDA STATE // AYUSH NAUTIYAL - PRO DEVELOPER DOSSIER</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600;700;800&family=Montserrat:ital,wght@0,800;0,900;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="gta-body">
+  <div class="crt-scanline"></div>
+  <div class="vignette-overlay"></div>
+
+  <!-- Background Ambience Elements -->
+  <div class="sky-backdrop">
+    <div class="sun-glow"></div>
+    <div class="palm-silhouettes"></div>
+    <div class="grid-horizon"></div>
+  </div>
+
+  <div class="app-container">
+    <!-- TOP TACTICAL HUD -->
+    <header class="hud-header">
+      <div class="hud-left">
+        <div class="department-tag">[LEONIDA STATE DEPARTMENT // CODE ENFORCEMENT]</div>
+        <h1 class="glitch-title" data-text="AYUSH NAUTIYAL">AYUSH NAUTIYAL</h1>
+        <div class="hud-subhead">
+          <span class="badge-role">FULL-STACK SAAS ARCHITECT</span>
+          <span class="separator">//</span>
+          <span class="badge-location">VICE CITY SECTOR [25.7617 N, 80.1918 W]</span>
+          <span class="separator">//</span>
+          <span class="badge-status">STATUS: PRODUCTION ACTIVE</span>
+        </div>
+      </div>
+
+      <!-- Tactical Wanted Level & GPS Radar -->
+      <div class="hud-right">
+        <div class="wanted-container">
+          <div class="wanted-label">WANTED LEVEL</div>
+          <div class="wanted-stars" id="wanted-stars">
+            <svg class="star active" viewBox="0 0 24 24"><polygon points="12,2 15,8.5 22,9.3 17,14.2 18.5,21.5 12,17.8 5.5,21.5 7,14.2 2,9.3 9,8.5"/></svg>
+            <svg class="star active" viewBox="0 0 24 24"><polygon points="12,2 15,8.5 22,9.3 17,14.2 18.5,21.5 12,17.8 5.5,21.5 7,14.2 2,9.3 9,8.5"/></svg>
+            <svg class="star active" viewBox="0 0 24 24"><polygon points="12,2 15,8.5 22,9.3 17,14.2 18.5,21.5 12,17.8 5.5,21.5 7,14.2 2,9.3 9,8.5"/></svg>
+            <svg class="star active" viewBox="0 0 24 24"><polygon points="12,2 15,8.5 22,9.3 17,14.2 18.5,21.5 12,17.8 5.5,21.5 7,14.2 2,9.3 9,8.5"/></svg>
+            <svg class="star active" viewBox="0 0 24 24"><polygon points="12,2 15,8.5 22,9.3 17,14.2 18.5,21.5 12,17.8 5.5,21.5 7,14.2 2,9.3 9,8.5"/></svg>
+          </div>
+          <div class="wanted-sub">MAXIMUM CODE VELOCITY</div>
+        </div>
+
+        <!-- Radar Widget -->
+        <div class="radar-hud">
+          <div class="radar-sweep"></div>
+          <div class="radar-crosshair-h"></div>
+          <div class="radar-crosshair-v"></div>
+          <div class="radar-blip blip-1"></div>
+          <div class="radar-blip blip-2"></div>
+          <div class="radar-coords">GPS 103.8 MHZ</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- COUNTDOWN & METRIC TICKER BAR -->
+    <div class="ticker-banner">
+      <div class="ticker-item">
+        <span class="ticker-label">TARGET YEAR TOTAL:</span>
+        <span class="ticker-val highlight-pink">4,689 CONTRIBUTIONS</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-label">CALENDAR RANGE:</span>
+        <span class="ticker-val">JAN 03, 2026 -> NOV 17, 2026</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-label">ACTIVE DAY COUNT:</span>
+        <span class="ticker-val highlight-cyan">DAY 319 / 365</span>
+      </div>
+      <div class="ticker-item">
+        <span class="ticker-label">CURRENT UNBROKEN STREAK:</span>
+        <span class="ticker-val highlight-gold" id="live-streak">78 DAYS</span>
+      </div>
+      <div class="ticker-item countdown-box">
+        <span class="ticker-label">DAILY CYCLE COUNTDOWN:</span>
+        <span class="ticker-val mono" id="countdown-timer">--:--:--</span>
+      </div>
+      <div class="ticker-audio">
+        <button id="audio-toggle" class="btn-audio">
+          <span class="audio-icon">RADIO: WAVE 103</span>
+          <span id="audio-state">[OFF]</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- MAIN GRID: HEATMAP SECTION -->
+    <section class="section-card heatmap-section">
+      <div class="card-header">
+        <div>
+          <div class="card-tag">// TACTICAL RADAR // CONTRIBUTION HEATMAP</div>
+          <h2 class="card-title">4,689 CONTRIBUTIONS IN THE LAST YEAR</h2>
+          <div class="card-caption">JANUARY 03, 2026 TO NOVEMBER 17, 2026 [46 CALENDAR WEEKS] WITH INTENTIONAL ARCHITECTURAL GAPS</div>
+        </div>
+        <div class="heatmap-controls">
+          <button class="filter-btn active" data-filter="all">ALL [319 DAYS]</button>
+          <button class="filter-btn" data-filter="crunch">HIGH COMMITS [>25]</button>
+          <button class="filter-btn" data-filter="streaks">STREAK BLOCKS</button>
+          <button class="filter-btn" data-filter="gaps">INTENTIONAL GAPS</button>
+        </div>
+      </div>
+
+      <div class="heatmap-container-wrapper">
+        <div class="heatmap-container" id="heatmap-grid">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+
+      <div class="heatmap-footer">
+        <div class="footer-stats">
+          <span>PEAK CRUNCH DAY: <strong class="highlight-pink" id="best-day-label">OCT 22, 2026 [41 COMMITS]</strong></span>
+          <span class="bullet">•</span>
+          <span>STRATEGIC GAPS: <strong class="highlight-cyan">38 DAYS (ARCHITECTURE / RECHARGE)</strong></span>
+          <span class="bullet">•</span>
+          <span>TOTAL COMMITS LOGGED: <strong class="highlight-gold">4,689</strong></span>
+        </div>
+        <div class="heatmap-legend">
+          <span class="legend-text">LESS</span>
+          <span class="legend-cell lvl-0" title="Level 0: Void (0)"></span>
+          <span class="legend-cell lvl-1" title="Level 1: Dusk (1-8)"></span>
+          <span class="legend-cell lvl-2" title="Level 2: Magenta (9-16)"></span>
+          <span class="legend-cell lvl-3" title="Level 3: Hot Pink (17-28)"></span>
+          <span class="legend-cell lvl-4" title="Level 4: Sunset (29-42)"></span>
+          <span class="legend-cell lvl-5" title="Level 5: Overdrive Cyan (43+)"></span>
+          <span class="legend-text">MORE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLOATING CELL DETAIL TOOLTIP -->
+    <div id="heatmap-tooltip" class="hud-tooltip"></div>
+
+    <!-- THREE BATCHES INTELLIGENCE DOSSIER -->
+    <section class="section-card batches-section">
+      <div class="card-header">
+        <div>
+          <div class="card-tag">// CLASSIFIED INTELLIGENCE // 3-BATCH DIVISION</div>
+          <h2 class="card-title">DEVELOPER ACTIVITY AND SPECIFICATIONS</h2>
+          <div class="card-caption">ORGANIZED INTO THREE OPERATIONAL BATCHES HIGHLIGHTING CORE VELOCITY, CODE COLLABORATION, AND ECOSYSTEM IMPACT</div>
+        </div>
+        <div class="batch-tabs">
+          <button class="tab-btn active" data-tab="all">VIEW ALL BATCHES</button>
+          <button class="tab-btn" data-tab="batch_1">BATCH 01 // SYNDICATE</button>
+          <button class="tab-btn" data-tab="batch_2">BATCH 02 // HEIST OPS</button>
+          <button class="tab-btn" data-tab="batch_3">BATCH 03 // THE EMPIRE</button>
+        </div>
+      </div>
+
+      <div class="batches-grid" id="batches-container">
+        <!-- Populated via JS with structured 3 batches -->
+      </div>
+    </section>
+
+    <!-- BOTTOM MISSION HUD / FOOTER -->
+    <footer class="hud-footer">
+      <div class="footer-left">
+        <span class="hud-bracket">[</span> MISSION OBJECTIVE: 100% PRODUCTION RELIABILITY <span class="hud-bracket">]</span>
+        <span class="separator">//</span>
+        UPDATED DAILY ANCHORED FROM NOVEMBER 17, 2026 ONWARD VIA GITHUB ACTIONS
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/ayushnautiyal9520-create" target="_blank" class="hud-link">[GITHUB PROFILE]</a>
+        <a href="https://gryven.vercel.app/" target="_blank" class="hud-link">[PORTFOLIO]</a>
+        <a href="mailto:ayushnautiyal8936@gmail.com" class="hud-link">[CONTACT]</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

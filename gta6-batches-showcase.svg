@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" width="920" height="360">
+  <defs>
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="50%" stop-color="#ff5e00" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="50%" stop-color="#ff5e00" />
+      <stop offset="100%" stop-color="#ffd700" />
+    </linearGradient>
+
+    <style>
+      .bg {
+        fill: #080310;
+        stroke: url(#card-border);
+        stroke-width: 1.6;
+        rx: 10px;
+        ry: 10px;
+      }
+      .corner {
+        stroke: #ffd700;
+        stroke-width: 2;
+        fill: none;
+      }
+      .title {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        fill: url(#title-grad);
+      }
+      .subtitle {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, Menlo, monospace;
+        font-size: 10px;
+        font-weight: 700;
+        fill: #00f0ff;
+        letter-spacing: 0.8px;
+      }
+      .col-id {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, Menlo, monospace;
+        font-size: 11px;
+        font-weight: 800;
+        fill: #f8fafc;
+        letter-spacing: 0.8px;
+      }
+      .col-category {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, Menlo, monospace;
+        font-size: 9.5px;
+        font-weight: 600;
+        fill: #94a3b8;
+      }
+      .item-metric {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, Menlo, monospace;
+        font-size: 9px;
+        font-weight: 700;
+        fill: #a855f7;
+        letter-spacing: 0.6px;
+      }
+      .item-value {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 13.5px;
+        font-weight: 800;
+        fill: #ffffff;
+        letter-spacing: 0.5px;
+      }
+      .item-subtext {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, Menlo, monospace;
+        font-size: 8.5px;
+        font-weight: 500;
+        fill: #94a3b8;
+      }
+      .footer-hud {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, Menlo, monospace;
+        font-size: 10px;
+        font-weight: 700;
+        fill: #64748b;
+        letter-spacing: 0.8px;
+      }
+      .footer-highlight {
+        fill: #ffd700;
+      }
+    </style>
+  </defs>
+
+  <!-- Container Base -->
+  <rect class="bg" width="920" height="360" />
+
+  <!-- Corner Brackets -->
+  <path d="M 12 18 L 12 12 L 18 12" class="corner" />
+  <path d="M 908 18 L 908 12 L 902 12" class="corner" />
+  <path d="M 12 342 L 12 348 L 18 348" class="corner" />
+  <path d="M 908 342 L 908 348 L 902 348" class="corner" />
+
+  <!-- Header -->
+  <text x="35" y="27" class="title">DEVELOPER DOSSIER // 3-BATCH INTELLIGENCE REPORT</text>
+  <text x="35" y="42" class="subtitle">STATE OF LEONIDA // 4,689 CONTRIBUTIONS // ZERO-DEFECT PRODUCTION OPS</text>
+  <text x="885" y="27" text-anchor="end" class="footer-hud">COUNTDOWN: <tspan class="footer-highlight">DAY 319 / 365</tspan> | STATUS: <tspan fill="#00f0ff">ACTIVE</tspan></text>
+
+  <!-- 3 Batches Columns -->
+  
+        <!-- Column 1: BATCH_01 -->
+        <g>
+          <rect x="35" y="55" width="275" height="280" rx="6" fill="#0d041a" stroke="#ff007f" stroke-width="1.4" />
+          <path d="M 35 55 L 50 55 L 35 70 Z" fill="#ff007f" />
+          <path d="M 310 55 L 295 55 L 310 70 Z" fill="#ff007f" />
+          
+          <!-- Column Header -->
+          <rect x="47" y="67" width="251" height="44" rx="4" fill="#170630" stroke="#37105e" stroke-width="1" />
+          <text x="57" y="83" class="col-id">BATCH_01 // SYNDICATE CORE // VELOCITY</text>
+          <text x="57" y="99" class="col-category">Pro Developer, High Commits & Streaks</text>
+          
+          
+            <!-- Item 1 -->
+            <rect x="47" y="125" width="251" height="60" rx="4" fill="#130826" stroke="#2a124a" stroke-width="1" />
+            <text x="57" y="143" class="item-metric">PRO DEVELOPER CLASSIFICATION</text>
+            <text x="57" y="161" class="item-value">TIER-S ARCHITECT</text>
+            <text x="57" y="175" class="item-subtext">Wanted Level: 5-Star Maximum Code Velocity |</text>
+            
+            <!-- Item 2 -->
+            <rect x="47" y="195" width="251" height="60" rx="4" fill="#130826" stroke="#2a124a" stroke-width="1" />
+            <text x="57" y="213" class="item-metric">HIGH COMMITS TOTAL</text>
+            <text x="57" y="231" class="item-value">4,689 COMMITS</text>
+            <text x="57" y="245" class="item-subtext">Peak Burst: 54 Commits/Day | Average 22.4 Co</text>
+            
+            <!-- Item 3 -->
+            <rect x="47" y="265" width="251" height="60" rx="4" fill="#130826" stroke="#2a124a" stroke-width="1" />
+            <text x="57" y="283" class="item-metric">COMMIT STREAKS</text>
+            <text x="57" y="301" class="item-value">78 DAYS ACTIVE</text>
+            <text x="57" y="315" class="item-subtext">Marathon Record: 78 Days Continuous Shipping</text>
+            
+        </g>
+        
+  
+        <!-- Column 2: BATCH_02 -->
+        <g>
+          <rect x="330" y="55" width="275" height="280" rx="6" fill="#0d041a" stroke="#ff5e00" stroke-width="1.4" />
+          <path d="M 330 55 L 345 55 L 330 70 Z" fill="#ff5e00" />
+          <path d="M 605 55 L 590 55 L 605 70 Z" fill="#ff5e00" />
+          
+          <!-- Column Header -->
+          <rect x="342" y="67" width="251" height="44" rx="4" fill="#170630" stroke="#37105e" stroke-width="1" />
+          <text x="352" y="83" class="col-id">BATCH_02 // HEIST OPS // CODE DISCIPLINE</text>
+          <text x="352" y="99" class="col-category">Daily Contributions, PRs & Issues Resolved</text>
+          
+          
+            <!-- Item 1 -->
+            <rect x="342" y="125" width="251" height="60" rx="4" fill="#130826" stroke="#2a124a" stroke-width="1" />
+            <text x="352" y="143" class="item-metric">DAILY CONTRIBUTIONS DENSITY</text>
+            <text x="352" y="161" class="item-value">281 / 319 DAYS</text>
+            <text x="352" y="175" class="item-subtext">86.8% Active Density | 4 Strategic Architect</text>
+            
+            <!-- Item 2 -->
+            <rect x="342" y="195" width="251" height="60" rx="4" fill="#130826" stroke="#2a124a" stroke-width="1" />
+            <text x="352" y="213" class="item-metric">PULL REQUESTS AND MERGES</text>
+            <text x="352" y="231" class="item-value">342 PRODUCTION PRS</text>
+            <text x="352" y="245" class="item-subtext">99.4% Clean Merge Rate | Sub-4hr Code Review</text>
+            
+            <!-- Item 3 -->
+            <rect x="342" y="265" width="251" height="60" rx="4" fill="#130826" stroke="#2a124a" stroke-width="1" />
+            <text x="352" y="283" class="item-metric">ISSUES RESOLVED</text>
+            <text x="352" y="301" class="item-value">489 TICKETS SQUASHED</text>
+            <text x="352" y="315" class="item-subtext">100% P0/P1 SLA Adherence | 84 Architecture R</text>
+            
+        </g>
+        
+  
+        <!-- Column 3: BATCH_03 -->
+        <g>
+          <rect x="625" y="55" width="275" height="280" rx="6" fill="#0d041a" stroke="#00f0ff" stroke-width="1.4" />
+          <path d="M 625 55 L 640 55 L 625 70 Z" fill="#00f0ff" />
+          <path d="M 900 55 L 885 55 L 900 70 Z" fill="#00f0ff" />
+          
+          <!-- Column Header -->
+          <rect x="637" y="67" width="251" height="44" rx="4" fill="#170630" stroke="#37105e" stroke-width="1" />
+          <text x="647" y="83" class="col-id">BATCH_03 // THE EMPIRE // FIELD IMPACT</text>
+          <text x="647" y="99" class="col-category">Projects, Development Activity & Highlights</text>
+          
+          
+            <!-- Item 1 -->
+            <rect x="637" y="125" width="251" height="60" rx="4" fill="#130826" stroke="#2a124a" stroke-width="1" />
+            <text x="647" y="143" class="item-metric">PROJECTS & ACTIVE REPOSITORIES</text>
+            <text x="647" y="161" class="item-value">18 REPOSITORIES</text>
+            <text x="647" y="175" class="item-subtext">Full-Stack SaaS, AI Agents, Microservices, C</text>
+            
+            <!-- Item 2 -->
+            <rect x="637" y="195" width="251" height="60" rx="4" fill="#130826" stroke="#2a124a" stroke-width="1" />
+            <text x="647" y="213" class="item-metric">DEVELOPMENT ACTIVITY PROFILE</text>
+            <text x="647" y="231" class="item-value">POLYGLOT ARCHITECT</text>
+            <text x="647" y="245" class="item-subtext">Next.js/React (38%), TypeScript/Node (32%), </text>
+            
+            <!-- Item 3 -->
+            <rect x="637" y="265" width="251" height="60" rx="4" fill="#130826" stroke="#2a124a" stroke-width="1" />
+            <text x="647" y="283" class="item-metric">OVERALL CONTRIBUTION HIGHLIGHTS</text>
+            <text x="647" y="301" class="item-value">4,689 MILESTONES SHIPPED</text>
+            <text x="647" y="315" class="item-subtext">Full 2026 Roadmap Executed | Rock-solid Engi</text>
+            
+        </g>
+        
+
+  <!-- Bottom HUD Status -->
+  <text x="35" y="348" class="footer-hud">[MISSION DISPATCH] DAILY COUNTDOWN ACTIVE // UPDATED DAILY VIA GITHUB ACTIONS</text>
+  <text x="885" y="348" text-anchor="end" class="footer-hud">CLASSIFICATION: <tspan class="footer-highlight">TIER-S PRO DEVELOPER</tspan></text>
+</svg>

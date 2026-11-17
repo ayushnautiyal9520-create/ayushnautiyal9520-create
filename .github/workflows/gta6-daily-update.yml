@@ -1,0 +1,30 @@
+name: GTA VI Daily Contribution Sync
+
+on:
+  schedule:
+    - cron: "17 0 * * *"   # ~00:17 UTC daily
+  workflow_dispatch: {}
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: write
+
+jobs:
+  sync-daily-contributions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          
+      - name: Run daily sync engine
+        run: python scripts/fetch_live_daily.py --username ayushnautiyal9520-create
+        
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(gta6): refresh daily contributions [skip ci]"
+          file_pattern: "data/contributions.json data/gta6_stats.json gta6-heatmap.svg contrib-heatmap.svg gta6-batches-showcase.svg"

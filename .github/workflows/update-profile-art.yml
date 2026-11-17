@@ -1,11 +1,9 @@
-name: Update profile art
+name: Update Profile Art
 
 on:
   schedule:
     - cron: "17 6 * * *"   # ~06:17 UTC daily
   workflow_dispatch: {}
-  push:
-    branches: [main, master]
 
 permissions:
   contents: write
@@ -20,17 +18,11 @@ jobs:
         with:
           python-version: "3.11"
           
-      - name: Install dependencies
-        run: pip install -r scripts/requirements.txt
-        
-      - name: Fetch live contributions
-        run: python scripts/fetch_contributions.py --username ayushnautiyal9520-create
-        
-      - name: Render heatmap SVG
-        run: python scripts/render_heatmap_svg.py
+      - name: Sync daily contributions
+        run: python scripts/fetch_live_daily.py --username ayushnautiyal9520-create
         
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh contribution graph [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg"
+          file_pattern: "data/contributions.json data/gta6_stats.json gta6-heatmap.svg contrib-heatmap.svg gta6-batches-showcase.svg"

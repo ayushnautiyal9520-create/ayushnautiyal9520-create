@@ -1,36 +1,21 @@
 @echo off
-echo Setting up Animated GitHub Profile README for Ayush Nautiyal...
-
-if not exist .venv (
-    echo Creating virtual environment...
-    python -m venv .venv
-)
-
-echo Activating environment and installing dependencies...
-call .venv\Scripts\activate.bat
-pip install -r scripts/requirements.txt
+echo Setting up GTA VI Developer Showcase for Ayush Nautiyal...
 
 echo.
-echo 1. Downloading Avatar...
-python scripts/download_avatar.py
+echo 1. Generating GTA VI Dataset (4,689 Contributions, Jan 3 to Nov 17, 2026)...
+python scripts/gta6_engine.py
 
-echo 2. Prepping Portrait Photo...
-python scripts/prep_photo.py source-photo.jpg
+echo.
+echo 2. Rendering GTA VI SVG Heatmap and 3-Batch Showcase...
+python scripts/render_gta6_svgs.py
 
-echo 3. Generating ASCII Portrait SVG...
-python scripts/make_ascii_svg.py
-
-echo 4. Generating Neofetch Info Card SVG...
-python scripts/make_info_card.py
-
-echo 5. Fetching Live Contributions...
-python scripts/fetch_contributions.py --username ayushnautiyal9520-create
-
-echo 6. Rendering Heatmap SVG...
-python scripts/render_heatmap_svg.py
+echo.
+echo 3. Testing Daily Sync Engine...
+python scripts/fetch_live_daily.py --username ayushnautiyal9520-create
 
 echo.
 echo ========================================================
-echo Done! All SVGs and README.md generated successfully.
+echo Done! All GTA VI SVGs, Data and Web UI Ready.
+echo Zero Emojis, 4,689 Contributions, Daily Tracking Active.
 echo ========================================================
 pause

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 315 36" width="315" height="36">
+  <style>
+    .btn-font { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+    .tag-text { font-size: 10px; font-weight: 800; fill: #f8fafc; letter-spacing: 1px; }
+    .act-text { font-size: 10px; font-weight: 900; fill: #06020c; letter-spacing: 0.8px; }
+  </style>
+  
+  <!-- Left Pill (Dark Tag) -->
+  <rect x="0" y="0" width="95" height="36" rx="6" fill="#140924" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+  <rect x="10" y="13" width="12" height="10" rx="1.5" stroke="#ffffff" stroke-width="1.2" fill="none"/><polyline points="10,14 16,18.5 22,14" stroke="#ffffff" stroke-width="1.2" fill="none"/>
+  <text x="32" y="22" class="btn-font tag-text">DISPATCH</text>
+
+  <!-- Right Pill (Neon Action with ↗) -->
+  <g transform="translate(98, 0)">
+    <rect x="0" y="0" width="216" height="36" rx="6" fill="#ffd700" />
+    <text x="14" y="22" class="btn-font act-text">AYUSHNAUTIYAL8936-GMAIL.COM</text>
+    <!-- Arrow ↗ -->
+    <path d="M 196 21 L 204 13 M 198 13 L 204 13 L 204 19" stroke="#06020c" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

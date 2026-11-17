@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 295 36" width="295" height="36">
+  <style>
+    .btn-font { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+    .tag-text { font-size: 10px; font-weight: 800; fill: #f8fafc; letter-spacing: 1px; }
+    .act-text { font-size: 10px; font-weight: 900; fill: #06020c; letter-spacing: 0.8px; }
+  </style>
+  
+  <!-- Left Pill (Dark Tag) -->
+  <rect x="0" y="0" width="88" height="36" rx="6" fill="#140924" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+  <path d="M 16 11 C 12.7 11 10 13.7 10 17 C 10 19.6 11.7 21.8 14 22.6 C 14.3 22.7 14.4 22.5 14.4 22.3 L 14.4 21.2 C 12.7 21.6 12.4 20.4 12.4 20.4 C 12.1 19.7 11.7 19.5 11.7 19.5 C 11.1 19.1 11.7 19.1 11.7 19.1 C 12.3 19.1 12.7 19.7 12.7 19.7 C 13.2 20.6 14.1 20.4 14.4 20.2 C 14.5 19.8 14.6 19.5 14.8 19.3 C 13.5 19.1 12.1 18.6 12.1 16.3 C 12.1 15.6 12.3 15.1 12.7 14.7 C 12.6 14.5 12.4 13.8 12.8 12.9 C 12.8 12.9 13.4 12.7 14.8 13.6 C 15.4 13.4 16 13.3 16.6 13.3 C 17.2 13.3 17.8 13.4 18.4 13.6 C 19.8 12.7 20.4 12.9 20.4 12.9 C 20.8 13.8 20.6 14.5 20.5 14.7 C 20.9 15.1 21.1 15.6 21.1 16.3 C 21.1 18.6 19.7 19.1 18.4 19.3 C 18.6 19.5 18.8 19.9 18.8 20.5 L 18.8 22.3 C 18.8 22.5 18.9 22.7 19.2 22.6 C 21.5 21.8 23.2 19.6 23.2 17 C 23.2 13.7 20.5 11 17.2 11 Z" fill="#ffffff"/>
+  <text x="30" y="22" class="btn-font tag-text">GITHUB</text>
+
+  <!-- Right Pill (Neon Action with ↗) -->
+  <g transform="translate(91, 0)">
+    <rect x="0" y="0" width="203" height="36" rx="6" fill="#00f0ff" />
+    <text x="14" y="22" class="btn-font act-text">AYUSHNAUTIYAL9520-CREATE</text>
+    <!-- Arrow ↗ -->
+    <path d="M 183 21 L 191 13 M 185 13 L 191 13 L 191 19" stroke="#06020c" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

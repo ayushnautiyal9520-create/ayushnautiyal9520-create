@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 315 36" width="315" height="36">
+  <style>
+    .btn-font { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+    .tag-text { font-size: 10px; font-weight: 800; fill: #f8fafc; letter-spacing: 1px; }
+    .act-text { font-size: 10px; font-weight: 900; fill: #ffffff; letter-spacing: 0.8px; }
+  </style>
+  
+  <!-- Left Pill (Dark Tag) -->
+  <rect x="0" y="0" width="105" height="36" rx="6" fill="#140924" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+  <circle cx="16" cy="18" r="6" stroke="#ffffff" stroke-width="1.2" fill="none"/><line x1="16" y1="12" x2="16" y2="24" stroke="#ffffff" stroke-width="1"/><line x1="10" y1="18" x2="22" y2="18" stroke="#ffffff" stroke-width="1"/><circle cx="18" cy="16" r="1.5" fill="#ff007f"/>
+  <text x="32" y="22" class="btn-font tag-text">LIVE HUD UI</text>
+
+  <!-- Right Pill (Neon Action with ↗) -->
+  <g transform="translate(108, 0)">
+    <rect x="0" y="0" width="206" height="36" rx="6" fill="#ff007f" />
+    <text x="14" y="22" class="btn-font act-text">EXPLORE INTERACTIVE RADAR</text>
+    <!-- Arrow ↗ -->
+    <path d="M 186 21 L 194 13 M 188 13 L 194 13 L 194 19" stroke="#ffffff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

@@ -1,134 +1,267 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 170" width="920" height="170">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 240" width="960" height="240">
   <defs>
-    <linearGradient id="hero-border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff007f" />
-      <stop offset="50%" stop-color="#ff5e00" />
-      <stop offset="100%" stop-color="#00f0ff" />
+    <!-- Outer Card Border Gradient -->
+    <linearGradient id="hero-card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#ff5e00" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.8" />
     </linearGradient>
 
-    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="30%" stop-color="#ff8cc6" />
-      <stop offset="70%" stop-color="#ff007f" />
-      <stop offset="100%" stop-color="#ff5e00" />
+    <!-- Sunset Sky Gradient for Scenic Right Half -->
+    <linearGradient id="sunset-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b0326" />
+      <stop offset="25%" stop-color="#5a084c" />
+      <stop offset="55%" stop-color="#be116a" />
+      <stop offset="75%" stop-color="#ff501e" />
+      <stop offset="90%" stop-color="#ff9020" />
+      <stop offset="100%" stop-color="#ffd240" />
     </linearGradient>
+
+    <!-- Water Surface Gradient -->
+    <linearGradient id="sunset-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff3b68" stop-opacity="0.6" />
+      <stop offset="40%" stop-color="#550944" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0d021a" />
+    </linearGradient>
+
+    <!-- Giant Sun Gradient -->
+    <radialGradient id="sun-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#ffe666" />
+      <stop offset="70%" stop-color="#ff6611" />
+      <stop offset="100%" stop-color="#be116a" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Title Nautiyal Gradient -->
+    <linearGradient id="title-nautiyal-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="100%" stop-color="#ff2e9e" />
+    </linearGradient>
+
+    <!-- Clip Path for Inside the Rounded Card -->
+    <clipPath id="hero-clip">
+      <rect x="0" y="0" width="960" height="240" rx="12" ry="12" />
+    </clipPath>
 
     <style>
-      .hero-bg {
-        fill: #06020c;
-        stroke: url(#hero-border);
-        stroke-width: 1.6;
-        rx: 8px;
-        ry: 8px;
-      }
-      .corner-tick {
-        stroke: #00f0ff;
-        stroke-width: 2;
-        fill: none;
-      }
-      .dept-tag {
-        font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, Menlo, monospace;
-        font-size: 10px;
-        font-weight: 700;
-        fill: #00f0ff;
-        letter-spacing: 2px;
-      }
-      .hero-title {
+      .font-display {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        font-size: 34px;
+      }
+      .font-mono {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, Menlo, monospace;
+      }
+      .hero-title-ayush {
+        font-size: 42px;
         font-weight: 900;
         font-style: italic;
-        letter-spacing: 2px;
-        fill: url(#title-grad);
-      }
-      .hero-sub {
-        font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, Menlo, monospace;
-        font-size: 10.5px;
-        font-weight: 700;
-        fill: #94a3b8;
+        fill: #ffffff;
         letter-spacing: 1px;
       }
-      .gold-text { fill: #ffd700; }
-      .cyan-text { fill: #00f0ff; }
-      .green-text { fill: #34d399; }
-      .pink-text { fill: #ff007f; }
-      
-      .ticker-bar {
-        fill: #0d041a;
-        stroke: #2a0845;
-        stroke-width: 1;
-        rx: 4px;
-        ry: 4px;
+      .hero-title-nautiyal {
+        font-size: 42px;
+        font-weight: 900;
+        font-style: italic;
+        fill: url(#title-nautiyal-grad);
+        letter-spacing: 1px;
       }
-      .ticker-text {
-        font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, Menlo, monospace;
-        font-size: 10px;
+      .hero-sub {
+        font-size: 11.5px;
         font-weight: 700;
         fill: #cbd5e1;
-        letter-spacing: 0.8px;
+        letter-spacing: 1.6px;
       }
-      .wanted-label {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        font-size: 11px;
-        font-weight: 900;
-        letter-spacing: 2px;
-        fill: #ffd700;
+      .status-text {
+        font-size: 10.5px;
+        font-weight: 800;
+        fill: #f8fafc;
+        letter-spacing: 1.2px;
       }
-      .radar-circle {
-        fill: #0a0314;
-        stroke: #00f0ff;
+      .ticker-box {
+        fill: #0c031a;
+        stroke: rgba(255, 0, 127, 0.35);
         stroke-width: 1.2;
+        rx: 6px;
+        ry: 6px;
       }
-      .radar-cross {
-        stroke: rgba(0, 240, 255, 0.4);
-        stroke-width: 1;
+      .ticker-text {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        fill: #cbd5e1;
       }
     </style>
   </defs>
 
-  <!-- Container Base -->
-  <rect class="hero-bg" width="920" height="170" />
+  <g clip-path="url(#hero-clip)">
+    <!-- Base Canvas -->
+    <rect width="960" height="240" fill="#0a0214" />
 
-  <!-- Corner Crosshairs -->
-  <path d="M 10 18 L 10 10 L 18 10" class="corner-tick" />
-  <path d="M 910 18 L 910 10 L 902 10" class="corner-tick" />
-  <path d="M 10 152 L 10 160 L 18 160" class="corner-tick" />
-  <path d="M 910 152 L 910 160 L 902 160" class="corner-tick" />
+    <!-- Right Side Scenic Background (Sunset over Vice City) -->
+    <g transform="translate(410, 0)">
+      <!-- Sunset Sky -->
+      <rect x="0" y="0" width="550" height="175" fill="url(#sunset-sky)" />
 
-  <!-- Left Header Content -->
-  <text x="32" y="30" class="dept-tag">[LEONIDA STATE DEPARTMENT // CODE ENFORCEMENT]</text>
-  <text x="32" y="68" class="hero-title">AYUSH NAUTIYAL</text>
-  <text x="32" y="88" class="hero-sub">
-    <tspan class="gold-text">FULL-STACK SAAS ARCHITECT</tspan> // 
-    <tspan class="cyan-text">VICE CITY SECTOR [25.7617 N, 80.1918 W]</tspan> // 
-    <tspan class="green-text">STATUS: PRODUCTION ACTIVE</tspan>
-  </text>
+      <!-- Giant Setting Sun in Center-Right of Scene -->
+      <circle cx="270" cy="110" r="58" fill="url(#sun-glow)" opacity="0.95" />
 
-  <!-- Wanted Level 5 Stars -->
-  <g>
-    <text x="670" y="22" class="wanted-label">WANTED LEVEL</text>
-    <polygon points="678,30 680.5,35.5 686,36.2 682,40.2 683,46 678,43 673,46 674,40.2 670,36.2 675.5,35.5" fill="#ffd700"/><polygon points="700,30 702.5,35.5 708,36.2 704,40.2 705,46 700,43 695,46 696,40.2 692,36.2 697.5,35.5" fill="#ffd700"/><polygon points="722,30 724.5,35.5 730,36.2 726,40.2 727,46 722,43 717,46 718,40.2 714,36.2 719.5,35.5" fill="#ffd700"/><polygon points="744,30 746.5,35.5 752,36.2 748,40.2 749,46 744,43 739,46 740,40.2 736,36.2 741.5,35.5" fill="#ffd700"/><polygon points="766,30 768.5,35.5 774,36.2 770,40.2 771,46 766,43 761,46 762,40.2 758,36.2 763.5,35.5" fill="#ffd700"/>
-    <text x="774" y="56" text-anchor="end" class="dept-tag">MAX VELOCITY</text>
+      <!-- Vice City Skyline Silhouettes -->
+      <path d="M 0 160 
+               L 35 160 L 35 135 L 50 135 L 50 160 
+               L 75 160 L 75 120 L 85 108 L 92 108 L 98 120 L 98 160 
+               L 115 160 L 115 100 L 130 100 L 130 160 
+               L 145 160 L 145 125 L 160 125 L 160 160 
+               L 175 160 L 175 90 L 182 72 L 186 72 L 194 90 L 194 160 
+               L 210 160 L 210 115 L 222 115 L 222 160 
+               L 240 160 L 240 120 L 252 120 L 252 160 
+               L 270 160 L 270 105 L 282 105 L 282 160 
+               L 300 160 L 300 95 L 314 95 L 314 160 
+               L 335 160 L 335 130 L 350 130 L 350 160 
+               L 370 160 L 370 110 L 385 110 L 385 160 
+               L 415 160 L 415 125 L 435 125 L 435 160 
+               L 550 160 L 550 175 L 0 175 Z" fill="#1b0326" />
+
+      <!-- Windows Lights in Skyline -->
+      <circle cx="82" cy="130" r="1.2" fill="#00f0ff" opacity="0.8" />
+      <circle cx="122" cy="115" r="1.2" fill="#ffd544" opacity="0.9" />
+      <circle cx="122" cy="125" r="1.2" fill="#00f0ff" opacity="0.7" />
+      <circle cx="188" cy="98" r="1.4" fill="#ffd544" opacity="0.9" />
+      <circle cx="188" cy="118" r="1.2" fill="#ffffff" opacity="0.8" />
+      <circle cx="276" cy="118" r="1.2" fill="#00f0ff" opacity="0.7" />
+      <circle cx="308" cy="110" r="1.2" fill="#ffd544" opacity="0.8" />
+
+      <!-- Water Surface with Sunset Reflection -->
+      <rect x="0" y="160" width="550" height="25" fill="url(#sunset-water)" />
+      
+      <!-- Horizontal Water Shimmer Lines -->
+      <line x1="200" y1="165" x2="330" y2="165" stroke="#ffd544" stroke-width="1.4" opacity="0.7" />
+      <line x1="230" y1="170" x2="310" y2="170" stroke="#ff7722" stroke-width="1.4" opacity="0.8" />
+      <line x1="160" y1="173" x2="370" y2="173" stroke="#ff007f" stroke-width="0.9" opacity="0.6" />
+
+      <!-- White Retro Sports Car / Supercar (Detailed Rear 3/4 View) -->
+      <g transform="translate(325, 122)">
+        <!-- Ground Shadow -->
+        <ellipse cx="105" cy="58" rx="85" ry="9" fill="#06010c" opacity="0.95" />
+        
+        <!-- Car Silhouette & Main White Body Shell -->
+        <path d="M 22 45 
+                 C 38 32, 65 16, 95 13 
+                 C 132 10, 158 20, 174 34 
+                 L 198 38 
+                 C 205 42, 206 48, 202 52 
+                 L 22 52 
+                 C 18 48, 20 46, 22 45 Z" fill="#f1f5f9" />
+        
+        <!-- Cabin Glass & Pillars (Tinted Sunset Violet) -->
+        <path d="M 55 40 L 92 18 L 142 18 L 162 40 Z" fill="#180424" />
+        <path d="M 98 20 L 138 20 L 156 39 L 98 39 Z" fill="#29073b" />
+
+        <!-- Rear Trunk & Spoiler Lip -->
+        <path d="M 152 38 L 202 40 L 204 46 L 152 46 Z" fill="#cbd5e1" />
+
+        <!-- Full-Width Glowing Red Neon Taillight Bar -->
+        <rect x="170" y="44" width="34" height="4.5" rx="1.5" fill="#ff0033" />
+        <rect x="173" y="45" width="28" height="2.5" rx="1" fill="#ff99aa" />
+        <line x1="170" y1="46" x2="204" y2="46" stroke="#ffffff" stroke-width="0.8" />
+
+        <!-- Lower Bumper Diffuser (Black) -->
+        <path d="M 166 49 L 203 49 L 201 54 L 166 54 Z" fill="#0f172a" />
+        
+        <!-- Twin Exhaust Tips -->
+        <circle cx="174" cy="52" r="1.8" fill="#94a3b8" />
+        <circle cx="182" cy="52" r="1.8" fill="#94a3b8" />
+
+        <!-- Wheels / Tires -->
+        <ellipse cx="50" cy="51" rx="12" ry="10" fill="#0f0518" />
+        <circle cx="50" cy="51" r="5" fill="#475569" />
+        <ellipse cx="170" cy="53" rx="14" ry="11" fill="#0f0518" />
+        <circle cx="170" cy="53" r="6" fill="#64748b" />
+      </g>
+
+      <!-- Palm Trees on Far Right -->
+      <!-- Main Palm Tree -->
+      <g transform="translate(480, 25)">
+        <path d="M 22 150 Q 15 80, -2 15" stroke="#12011a" stroke-width="5.5" fill="none" stroke-linecap="round" />
+        <!-- Detailed Fan Fronds -->
+        <path d="M -2 15 Q -35 -2, -65 12" stroke="#12011a" stroke-width="3.5" fill="none" />
+        <path d="M -2 15 Q -25 -25, -55 -22" stroke="#12011a" stroke-width="3.5" fill="none" />
+        <path d="M -2 15 Q 5 -38, -5 -60" stroke="#12011a" stroke-width="3.5" fill="none" />
+        <path d="M -2 15 Q 30 -25, 55 -15" stroke="#12011a" stroke-width="3.5" fill="none" />
+        <path d="M -2 15 Q 40 5, 55 25" stroke="#12011a" stroke-width="3.5" fill="none" />
+      </g>
+      <!-- Background Palm Tree -->
+      <g transform="translate(440, 50)">
+        <path d="M 12 125 Q 8 65, -5 18" stroke="#1c0328" stroke-width="3.8" fill="none" stroke-linecap="round" />
+        <path d="M -5 18 Q -28 2, -45 14" stroke="#1c0328" stroke-width="2.6" fill="none" />
+        <path d="M -5 18 Q -18 -20, -38 -20" stroke="#1c0328" stroke-width="2.6" fill="none" />
+        <path d="M -5 18 Q 12 -28, 8 -45" stroke="#1c0328" stroke-width="2.6" fill="none" />
+        <path d="M -5 18 Q 28 -14, 45 -2" stroke="#1c0328" stroke-width="2.6" fill="none" />
+      </g>
+    </g>
+
+    <!-- Palm Trees on Left Background -->
+    <g transform="translate(10, 15)">
+      <path d="M 10 165 Q 28 90, 52 20" stroke="#12011a" stroke-width="6" fill="none" stroke-linecap="round" />
+      <path d="M 52 20 Q 20 -2, -15 10" stroke="#12011a" stroke-width="3.5" fill="none" />
+      <path d="M 52 20 Q 25 -25, 5 -32" stroke="#12011a" stroke-width="3.5" fill="none" />
+      <path d="M 52 20 Q 65 -35, 55 -55" stroke="#12011a" stroke-width="3.5" fill="none" />
+      <path d="M 52 20 Q 85 -20, 105 -8" stroke="#12011a" stroke-width="3.5" fill="none" />
+      <path d="M 52 20 Q 90 12, 100 30" stroke="#12011a" stroke-width="3.5" fill="none" />
+    </g>
+    <g transform="translate(58, 42)">
+      <path d="M 10 138 Q 22 80, 38 22" stroke="#1b0328" stroke-width="4.5" fill="none" stroke-linecap="round" />
+      <path d="M 38 22 Q 12 2, -15 10" stroke="#1b0328" stroke-width="2.8" fill="none" />
+      <path d="M 38 22 Q 18 -20, 0 -28" stroke="#1b0328" stroke-width="2.8" fill="none" />
+      <path d="M 38 22 Q 50 -25, 45 -42" stroke="#1b0328" stroke-width="2.8" fill="none" />
+      <path d="M 38 22 Q 68 -15, 82 -2" stroke="#1b0328" stroke-width="2.8" fill="none" />
+    </g>
+
+    <!-- Dark Gradient Shade over Left Half for Text Contrast -->
+    <rect x="0" y="0" width="480" height="240" fill="url(#hero-shade)" />
+    <linearGradient id="hero-shade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#080112" stop-opacity="0.98" />
+      <stop offset="70%" stop-color="#0a0216" stop-opacity="0.92" />
+      <stop offset="100%" stop-color="#0a0216" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Left Header Content -->
+    <g transform="translate(42, 26)">
+      <!-- Main Title: AYUSH NAUTIYAL -->
+      <text x="0" y="52" class="font-display">
+        <tspan class="hero-title-ayush">AYUSH </tspan>
+        <tspan class="hero-title-nautiyal">NAUTIYAL</tspan>
+      </text>
+
+      <!-- Subtitle -->
+      <text x="2" y="78" class="font-mono hero-sub">FULL-STACK SAAS ARCHITECT <tspan fill="#ff007f">//</tspan> CODE ENFORCEMENT</text>
+
+      <!-- Status Pill -->
+      <g transform="translate(2, 95)">
+        <circle cx="7" cy="7" r="4.5" fill="#00ff88" />
+        <circle cx="7" cy="7" r="7" fill="#00ff88" opacity="0.3" />
+        <text x="22" y="11" class="font-mono status-text">STATUS: PRODUCTION ACTIVE</text>
+      </g>
+    </g>
+
+    <!-- Bottom Ticker Bar -->
+    <g transform="translate(42, 178)">
+      <rect x="0" y="0" width="876" height="38" class="ticker-box" />
+      
+      <!-- Left Accent Notch -->
+      <path d="M 0 0 L 4 0 L 4 38 L 0 38 Z" fill="#ff007f" />
+      
+      <!-- Metrics text -->
+      <text x="24" y="23" class="font-mono ticker-text">
+        TARGET TOTAL: <tspan fill="#ff007f" font-weight="900">4,689 CONTRIBUTIONS</tspan>
+        <tspan fill="#475569">   |   </tspan>
+        SPAN: <tspan fill="#ffffff" font-weight="800">JAN 03 -&gt; NOV 17, 2026</tspan>
+        <tspan fill="#475569">   |   </tspan>
+        UNBROKEN STREAK: <tspan fill="#ffd700" font-weight="900">78 DAYS</tspan>
+        <tspan fill="#475569">   |   </tspan>
+        COUNTDOWN: <tspan fill="#00f0ff" font-weight="900">DAY 319 / 365</tspan>
+      </text>
+    </g>
   </g>
 
-  <!-- Mini Radar Widget -->
-  <g>
-    <circle cx="845" cy="44" r="28" class="radar-circle" />
-    <line x1="817" y1="44" x2="873" y2="44" class="radar-cross" />
-    <line x1="845" y1="16" x2="845" y2="72" class="radar-cross" />
-    <circle cx="853" cy="37" r="2.5" fill="#ff007f" />
-    <circle cx="836" cy="53" r="2" fill="#00f0ff" />
-    <text x="845" y="86" text-anchor="middle" class="dept-tag" font-size="8px">GPS 103.8</text>
-  </g>
-
-  <!-- Ticker Bar -->
-  <rect x="32" y="112" width="856" height="38" class="ticker-bar" />
-  <path d="M 32 112 L 36 112 L 36 150 L 32 150 Z" fill="#ff5e00" />
-  
-  <text x="46" y="135" class="ticker-text">
-    TARGET TOTAL: <tspan class="pink-text">4,689 CONTRIBUTIONS</tspan> | 
-    SPAN: <tspan fill="#ffffff">JAN 03 - NOV 17, 2026</tspan> | 
-    UNBROKEN STREAK: <tspan class="gold-text">78 DAYS</tspan> | 
-    COUNTDOWN: <tspan class="cyan-text">DAY 319 / 365</tspan>
-  </text>
+  <!-- Card Outer Border -->
+  <rect x="1" y="1" width="958" height="238" rx="11" ry="11" fill="none" stroke="url(#hero-card-border)" stroke-width="1.8" />
 </svg>

@@ -27,4 +27,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(gta6): refresh daily contributions [skip ci]"
-          file_pattern: "data/contributions.json data/gta6_stats.json gta6-hero-banner.svg gta6-heatmap.svg contrib-heatmap.svg gta6-batches-showcase.svg"
+          file_pattern: "data/contributions.json data/gta6_stats.json gta6-hero-banner.svg gta6-heatmap.svg contrib-heatmap.svg gta6-batches-showcase.svg btn-hud.svg btn-portfolio.svg btn-github.svg btn-dispatch.svg"

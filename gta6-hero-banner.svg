@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 170" width="920" height="170">
+  <defs>
+    <linearGradient id="hero-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="50%" stop-color="#ff5e00" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#ff8cc6" />
+      <stop offset="70%" stop-color="#ff007f" />
+      <stop offset="100%" stop-color="#ff5e00" />
+    </linearGradient>
+
+    <style>
+      .hero-bg {
+        fill: #06020c;
+        stroke: url(#hero-border);
+        stroke-width: 1.6;
+        rx: 8px;
+        ry: 8px;
+      }
+      .corner-tick {
+        stroke: #00f0ff;
+        stroke-width: 2;
+        fill: none;
+      }
+      .dept-tag {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, Menlo, monospace;
+        font-size: 10px;
+        font-weight: 700;
+        fill: #00f0ff;
+        letter-spacing: 2px;
+      }
+      .hero-title {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 34px;
+        font-weight: 900;
+        font-style: italic;
+        letter-spacing: 2px;
+        fill: url(#title-grad);
+      }
+      .hero-sub {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, Menlo, monospace;
+        font-size: 10.5px;
+        font-weight: 700;
+        fill: #94a3b8;
+        letter-spacing: 1px;
+      }
+      .gold-text { fill: #ffd700; }
+      .cyan-text { fill: #00f0ff; }
+      .green-text { fill: #34d399; }
+      .pink-text { fill: #ff007f; }
+      
+      .ticker-bar {
+        fill: #0d041a;
+        stroke: #2a0845;
+        stroke-width: 1;
+        rx: 4px;
+        ry: 4px;
+      }
+      .ticker-text {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, Menlo, monospace;
+        font-size: 10px;
+        font-weight: 700;
+        fill: #cbd5e1;
+        letter-spacing: 0.8px;
+      }
+      .wanted-label {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 11px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        fill: #ffd700;
+      }
+      .radar-circle {
+        fill: #0a0314;
+        stroke: #00f0ff;
+        stroke-width: 1.2;
+      }
+      .radar-cross {
+        stroke: rgba(0, 240, 255, 0.4);
+        stroke-width: 1;
+      }
+    </style>
+  </defs>
+
+  <!-- Container Base -->
+  <rect class="hero-bg" width="920" height="170" />
+
+  <!-- Corner Crosshairs -->
+  <path d="M 10 18 L 10 10 L 18 10" class="corner-tick" />
+  <path d="M 910 18 L 910 10 L 902 10" class="corner-tick" />
+  <path d="M 10 152 L 10 160 L 18 160" class="corner-tick" />
+  <path d="M 910 152 L 910 160 L 902 160" class="corner-tick" />
+
+  <!-- Left Header Content -->
+  <text x="32" y="30" class="dept-tag">[LEONIDA STATE DEPARTMENT // CODE ENFORCEMENT]</text>
+  <text x="32" y="68" class="hero-title">AYUSH NAUTIYAL</text>
+  <text x="32" y="88" class="hero-sub">
+    <tspan class="gold-text">FULL-STACK SAAS ARCHITECT</tspan> // 
+    <tspan class="cyan-text">VICE CITY SECTOR [25.7617 N, 80.1918 W]</tspan> // 
+    <tspan class="green-text">STATUS: PRODUCTION ACTIVE</tspan>
+  </text>
+
+  <!-- Wanted Level 5 Stars -->
+  <g>
+    <text x="670" y="22" class="wanted-label">WANTED LEVEL</text>
+    <polygon points="678,30 680.5,35.5 686,36.2 682,40.2 683,46 678,43 673,46 674,40.2 670,36.2 675.5,35.5" fill="#ffd700"/><polygon points="700,30 702.5,35.5 708,36.2 704,40.2 705,46 700,43 695,46 696,40.2 692,36.2 697.5,35.5" fill="#ffd700"/><polygon points="722,30 724.5,35.5 730,36.2 726,40.2 727,46 722,43 717,46 718,40.2 714,36.2 719.5,35.5" fill="#ffd700"/><polygon points="744,30 746.5,35.5 752,36.2 748,40.2 749,46 744,43 739,46 740,40.2 736,36.2 741.5,35.5" fill="#ffd700"/><polygon points="766,30 768.5,35.5 774,36.2 770,40.2 771,46 766,43 761,46 762,40.2 758,36.2 763.5,35.5" fill="#ffd700"/>
+    <text x="774" y="56" text-anchor="end" class="dept-tag">MAX VELOCITY</text>
+  </g>
+
+  <!-- Mini Radar Widget -->
+  <g>
+    <circle cx="845" cy="44" r="28" class="radar-circle" />
+    <line x1="817" y1="44" x2="873" y2="44" class="radar-cross" />
+    <line x1="845" y1="16" x2="845" y2="72" class="radar-cross" />
+    <circle cx="853" cy="37" r="2.5" fill="#ff007f" />
+    <circle cx="836" cy="53" r="2" fill="#00f0ff" />
+    <text x="845" y="86" text-anchor="middle" class="dept-tag" font-size="8px">GPS 103.8</text>
+  </g>
+
+  <!-- Ticker Bar -->
+  <rect x="32" y="112" width="856" height="38" class="ticker-bar" />
+  <path d="M 32 112 L 36 112 L 36 150 L 32 150 Z" fill="#ff5e00" />
+  
+  <text x="46" y="135" class="ticker-text">
+    TARGET TOTAL: <tspan class="pink-text">4,689 CONTRIBUTIONS</tspan> | 
+    SPAN: <tspan fill="#ffffff">JAN 03 - NOV 17, 2026</tspan> | 
+    UNBROKEN STREAK: <tspan class="gold-text">78 DAYS</tspan> | 
+    COUNTDOWN: <tspan class="cyan-text">DAY 319 / 365</tspan>
+  </text>
+</svg>

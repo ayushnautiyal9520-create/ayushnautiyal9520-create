@@ -1,15 +1,30 @@
 <div align="center">
 
-# AYUSH NAUTIYAL
-### FULL-STACK SAAS ARCHITECT // STATE OF LEONIDA
-
-[![Portfolio](https://img.shields.io/badge/WEBSITE-gryven.vercel.app-ff007f?style=for-the-badge&logo=vercel&logoColor=white)](https://gryven.vercel.app/)
-[![GitHub](https://img.shields.io/badge/GITHUB-ayushnautiyal9520--create-00f0ff?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ayushnautiyal9520-create)
-[![Email](https://img.shields.io/badge/DISPATCH-ayushnautiyal8936--gmail.com-ff5e00?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ayushnautiyal8936@gmail.com)
+<a href="https://github.com/ayushnautiyal9520-create">
+  <img src="./gta6-hero-banner.svg" width="920" alt="Ayush Nautiyal - GTA VI Pro Developer Dossier" />
+</a>
 
 <br>
 
-### <code>[LEONIDA STATE POLICE // RADAR HEATMAP // 4,689 CONTRIBUTIONS]</code>
+<p align="center">
+  <a href="./web/index.html">
+    <img src="https://img.shields.io/badge/LIVE_HUD_UI-EXPLORE_INTERACTIVE_RADAR-ff007f?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live HUD UI" />
+  </a>
+  &nbsp;
+  <a href="https://gryven.vercel.app/">
+    <img src="https://img.shields.io/badge/PORTFOLIO-gryven.vercel.app-ff5e00?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/ayushnautiyal9520-create">
+    <img src="https://img.shields.io/badge/GITHUB-ayushnautiyal9520--create-00f0ff?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  &nbsp;
+  <a href="mailto:ayushnautiyal8936@gmail.com">
+    <img src="https://img.shields.io/badge/DISPATCH-ayushnautiyal8936--gmail.com-ffd700?style=for-the-badge&logo=gmail&logoColor=black" alt="Dispatch" />
+  </a>
+</p>
+
+<br>
 
 <a href="./web/index.html">
   <img src="./gta6-heatmap.svg" width="920" alt="Ayush Nautiyal - GTA VI 4689 Contributions Heatmap" />
@@ -17,13 +32,9 @@
 
 <br><br>
 
-### <code>[DEVELOPER DOSSIER // 3-BATCH INTELLIGENCE REPORT]</code>
-
 <img src="./gta6-batches-showcase.svg" width="920" alt="Ayush Nautiyal - 3-Batch Developer Intelligence Showcase" />
 
 <br><br>
-
-## TECHNICAL STACK AND ARCHITECTURE
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
@@ -40,25 +51,8 @@
 
 <br>
 
-## OPERATIONAL PARAMETERS
-
-```
------------------------------------------------------------------------------------------
-[METRIC]                     [SPECIFICATION]
-Developer Classification:    Tier-S Pro Developer / SaaS Architect
-Total Year Contributions:    4,689 Contributions (Jan 03, 2026 - Nov 17, 2026)
-Active Shipping Streak:      78 Days Continuous (Unbroken into Nov 17, 2026)
-Intentional Rest Intervals:  38 Days Strategic Architecture & Hardening
-Production PRs Merged:       342 Production Pull Requests (99.4% Clean Merge)
-Issue Resolution SLA:        489 Tickets Closed (100% P0/P1 SLA Adherence)
-Daily Tracking Engine:       Automated Daily Sync from Nov 17, 2026 onward
------------------------------------------------------------------------------------------
-```
-
-<br>
-
 <p align="center">
-  <sub>Leonida State Department // Vice City Sector // Updated Daily via GitHub Actions [skip ci]</sub>
+  <sub>LEONIDA STATE DEPARTMENT // VICE CITY SECTOR // 4,689 CONTRIBUTIONS // UPDATED DAILY FROM NOV 17, 2026 ONWARD VIA GITHUB ACTIONS</sub>
 </p>
 
 </div>

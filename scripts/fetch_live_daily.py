@@ -132,6 +132,7 @@ def update_daily_contributions(username: str = DEFAULT_USERNAME):
 
     # Re-render SVGs
     import render_gta6_svgs
+    render_gta6_svgs.render_hero_banner()
     render_gta6_svgs.render_heatmap_svg()
     render_gta6_svgs.render_batches_svg()
 
